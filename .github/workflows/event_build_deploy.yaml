@@ -2,9 +2,13 @@ name: build-and-deploy-workflow
 
 on:
   push:
-    branches-ignore:
-      - main
+    # branches-ignore: 
+      # - main
+    branches: 
+      - FEATURE-*
   pull_request:
+    types:
+      - opened
     branches: 
       - main
 
